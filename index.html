@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Michael Erlander Portfolio</title>
+    <link rel="icon" href="https://www.freefavicon.com/freefavicons/objects/code-break-152-246266.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_VYW24L0UyPlkX6dlPf4VS");
+        })();
+    </script>
+    <script src="./assets/app.js"></script>
+</head>
+
+<body>
+    <header class="navbar-fixed">
+        <ul id="dropdown1" class="dropdown-content">
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/michael-erlander/">LinkedIn</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://github.com/mrerlander">GitHub</a>
+            </li>
+        </ul>
+        <nav>
+            <div class="nav-wrapper grey darken-3">
+                <a href="#" class="brand-logo">ME</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-trigger" href="#!" data-target="dropdown1">External Links
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#about">About Me</a>
+        </li>
+        <li>
+            <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+    <main>
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="./assets/images/footer_lodyas.png">
+            </div>
+        </div>
+        <div class="section grey lighten-2" id="about">
+            <br>
+            <div class="row container">
+                <h2 class="header">About Me</h2>
+                <p class="grey-text text-darken-3 lighten-3">I love building, learning, and solving puzzles.</p>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="./assets/images/footer_lodyas.png">
+            </div>
+        </div>
+        <div class="section grey lighten-2" id="portfolio">
+            <br>
+            <div class="row container">
+                <h2 class="header">Portfolio</h2>
+                <div class="col s12 m4">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="./assets/images/gifinder.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title grey-text darken-3">Gifinder</span>
+                            <p>A web app for finding movie gifs.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://mrerlander.github.io/gif-search/">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="./assets/images/groupdin.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title grey-text darken-3">GroupDīn</span>
+                            <p>A web app for planning a group outing to a restaurant.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://m-tuttle.github.io/GroupDin/">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="./assets/images/article-scraper.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title grey-text darken-3">Music News Scraper</span>
+                            <p>Article scraper for Pitchfork.com's latest news.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://boiling-depths-45354.herokuapp.com/">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="./assets/images/footer_lodyas.png">
+            </div>
+        </div>
+        <div class="section grey lighten-2" id="contact">
+            <br>
+            <div class="row container">
+                <h2 class="header">Contact</h2>
+                <div class="row">
+                    <form class="col s12" id="contact-form">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="company" type="text" class="validate">
+                                <label for="company">Company</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="message" class="materialize-textarea"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <button class="btn btn-large waves-effect waves-light" id="form-sub" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer black">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Michael Erlander
+                <span class="right hide-on-med-and-down">
+                    <a href="#">Home | </a>
+                    <a href="#about">About Me | </a>
+                    <a href="#portfolio">Portfolio | </a>
+                    <a href="#contact">Contact</a>
+                </span>
+            </div>
+    </footer>
+</body>
