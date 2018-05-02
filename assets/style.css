@@ -5,3 +5,7 @@ body {
 .parallax-container {
     height: 50vh;
 }
+
+html {
+    scroll-behavior: smooth
+}
